@@ -1,0 +1,14 @@
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.csprojAssemblyReference.cache
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.csproj.CoreCompileInputs.cache
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.RazorAssemblyInfo.cache
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.RazorAssemblyInfo.cs
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.AssemblyInfoInputs.cache
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.AssemblyInfo.cs
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\bin\Debug\netcoreapp2.2\AppSettings.deps.json
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\bin\Debug\netcoreapp2.2\AppSettings.runtimeconfig.json
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\bin\Debug\netcoreapp2.2\AppSettings.runtimeconfig.dev.json
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\bin\Debug\netcoreapp2.2\AppSettings.dll
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\bin\Debug\netcoreapp2.2\AppSettings.pdb
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.RazorTargetAssemblyInfo.cache
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.dll
+C:\Users\dojeda\source\repos\AppSettings\AppSettings\obj\Debug\netcoreapp2.2\AppSettings.pdb
