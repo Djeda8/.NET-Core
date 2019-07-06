@@ -20,6 +20,7 @@ namespace StartApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            // Use 'app' to configure the pipeline
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
