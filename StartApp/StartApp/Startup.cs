@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace StartApp
@@ -21,7 +19,12 @@ namespace StartApp
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
-            
+
+            services.AddEntityFrameworkSqlServer()
+                    .AddDbContext<MyContext>((serviceProvider, options) =>
+                        options.UseSqlServer(connectionString)
+                               .UseInternalServiceProvider(serviceProvider));
+                        
             services.AddMvc();// Add the MVC framework services to the IoC container
         }
         
@@ -35,9 +38,8 @@ namespace StartApp
                 app.UseDeveloperExceptionPage();
             }
             
-            app.UseErrorHandler("/html/errorpage.htm"); // Capture the errors and return the content of the static page "html / errorpage.htm"
             app.UseStaticFiles(); // Return the content of static files requested.
-            app.UseIdentity(); // Add Identity Framework for managing user authentication.
+            app.UseAuthentication(); // enables authentication capabilities.
             app.UseMvcWithDefaultRoute(); // Add MVC with a default route named 'default' and the following template: '{controller=Home}/{action=Index}/{id?}'.
 
             // Adds a finalizing middleware
