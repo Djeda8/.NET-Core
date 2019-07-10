@@ -12105,11 +12105,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Daniel\\source\\repos\\initialization\\initialization\\initialization.csproj",
+      "projectUniqueName": "C:\\GH\\.NET-Core\\initialization\\initialization\\initialization.csproj",
       "projectName": "initialization",
-      "projectPath": "C:\\Users\\Daniel\\source\\repos\\initialization\\initialization\\initialization.csproj",
+      "projectPath": "C:\\GH\\.NET-Core\\initialization\\initialization\\initialization.csproj",
       "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Daniel\\source\\repos\\initialization\\initialization\\obj\\",
+      "outputPath": "C:\\GH\\.NET-Core\\initialization\\initialization\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
