@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Debug;
 
 namespace LoggerForLogging
 {
@@ -15,11 +16,46 @@ namespace LoggerForLogging
     {
         public static void Main(string[] args)
         {
-            var host = CreateWebHostBuilder(args).Build();
+            var webHost = new WebHostBuilder()
+    .UseKestrel()
+    .UseContentRoot(Directory.GetCurrentDirectory())
+    .ConfigureAppConfiguration((hostingContext, config) =>
+    {
+        var env = hostingContext.HostingEnvironment;
+        config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                          .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+        config.AddEnvironmentVariables();
+    })
+    .ConfigureLogging((hostingContext, logging) =>
+    {
+                    // Requires `using Microsoft.Extensions.Logging;
 
-            var logger = host.Services.GetRequiredService<ILogger<Program>>();
-            //logger.LogInformation("Seeded the database.");
-            host.Run();
+                    logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+        logging.AddConsole();
+        logging.AddFilter<DebugLoggerProvider>("Microsoft", LogLevel.Trace);
+        logging.AddDebug();
+        logging.AddEventSourceLogger();
+    })
+    .UseStartup<Startup>()
+    .Build();
+
+            webHost.Run();
+
+
+
+            //var host = CreateWebHostBuilder(args).Build();
+
+            //var logger = host.Services.GetRequiredService<ILogger<Program>>();
+            ////logger.LogInformation("Seeded the database.");
+            //try
+            //{
+            //    host.Run();
+            //}
+            //catch (Exception ex)
+            //{
+
+            //    throw;
+            //}
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args)
@@ -34,6 +70,14 @@ namespace LoggerForLogging
                .UseKestrel() //add Kestrel as web server to the host
                .UseContentRoot(Directory.GetCurrentDirectory()) //Configure the the root directory
                .UseIISIntegration() // Configure the server to work as reverse server.
+               .ConfigureAppConfiguration((hostingContext, config) =>
+               {
+                   var env = hostingContext.HostingEnvironment;
+                   config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                         .AddJsonFile($"appsettings.{env.EnvironmentName}.json",
+                             optional: true, reloadOnChange: true);
+                   config.AddEnvironmentVariables();
+               })
                .ConfigureLogging((hostingContext, logging) =>
                {
                    // Requires `using Microsoft.Extensions.Logging;`
@@ -43,8 +87,8 @@ namespace LoggerForLogging
                    logging.AddEventSourceLogger();
                })
                .UseStartup<Startup>();
+
             return host;
         }
-
     }
 }
