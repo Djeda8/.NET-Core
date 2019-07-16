@@ -1,0 +1,14 @@
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\bin\Debug\netcoreapp2.2\Middlewares.deps.json
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\bin\Debug\netcoreapp2.2\Middlewares.runtimeconfig.json
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\bin\Debug\netcoreapp2.2\Middlewares.runtimeconfig.dev.json
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\bin\Debug\netcoreapp2.2\Middlewares.dll
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\bin\Debug\netcoreapp2.2\Middlewares.pdb
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.csprojAssemblyReference.cache
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.csproj.CoreCompileInputs.cache
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.RazorAssemblyInfo.cache
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.RazorAssemblyInfo.cs
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.AssemblyInfoInputs.cache
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.AssemblyInfo.cs
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.RazorTargetAssemblyInfo.cache
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.dll
+C:\Users\dojeda\source\repos\Middlewares\Middlewares\obj\Debug\netcoreapp2.2\Middlewares.pdb
