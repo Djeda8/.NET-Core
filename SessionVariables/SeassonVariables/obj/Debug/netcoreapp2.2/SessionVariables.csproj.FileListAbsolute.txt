@@ -1,0 +1,14 @@
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\bin\Debug\netcoreapp2.2\SessionVariables.deps.json
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\bin\Debug\netcoreapp2.2\SessionVariables.runtimeconfig.json
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\bin\Debug\netcoreapp2.2\SessionVariables.runtimeconfig.dev.json
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\bin\Debug\netcoreapp2.2\SessionVariables.dll
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\bin\Debug\netcoreapp2.2\SessionVariables.pdb
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.csproj.CoreCompileInputs.cache
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.RazorAssemblyInfo.cache
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.RazorAssemblyInfo.cs
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.AssemblyInfoInputs.cache
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.AssemblyInfo.cs
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.RazorTargetAssemblyInfo.cache
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.dll
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.pdb
+C:\Users\dojeda\source\repos\SessionVariables\SeassonVariables\obj\Debug\netcoreapp2.2\SessionVariables.csprojAssemblyReference.cache

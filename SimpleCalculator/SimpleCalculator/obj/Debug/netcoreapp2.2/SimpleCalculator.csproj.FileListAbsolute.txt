@@ -1,0 +1,14 @@
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\bin\Debug\netcoreapp2.2\SimpleCalculator.deps.json
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\bin\Debug\netcoreapp2.2\SimpleCalculator.runtimeconfig.json
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\bin\Debug\netcoreapp2.2\SimpleCalculator.runtimeconfig.dev.json
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\bin\Debug\netcoreapp2.2\SimpleCalculator.dll
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\bin\Debug\netcoreapp2.2\SimpleCalculator.pdb
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.csprojAssemblyReference.cache
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.csproj.CoreCompileInputs.cache
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.RazorAssemblyInfo.cache
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.RazorAssemblyInfo.cs
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.AssemblyInfoInputs.cache
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.AssemblyInfo.cs
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.RazorTargetAssemblyInfo.cache
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.dll
+C:\Users\dojeda\source\repos\SimpleCalculator\SimpleCalculator\obj\Debug\netcoreapp2.2\SimpleCalculator.pdb
