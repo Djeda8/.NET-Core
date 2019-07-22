@@ -1,0 +1,14 @@
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.csprojAssemblyReference.cache
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.csproj.CoreCompileInputs.cache
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.RazorAssemblyInfo.cache
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.RazorAssemblyInfo.cs
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.AssemblyInfoInputs.cache
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.AssemblyInfo.cs
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\bin\Debug\netcoreapp2.2\RoutingAuthentication.deps.json
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\bin\Debug\netcoreapp2.2\RoutingAuthentication.runtimeconfig.json
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\bin\Debug\netcoreapp2.2\RoutingAuthentication.runtimeconfig.dev.json
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\bin\Debug\netcoreapp2.2\RoutingAuthentication.dll
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\bin\Debug\netcoreapp2.2\RoutingAuthentication.pdb
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.RazorTargetAssemblyInfo.cache
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.dll
+C:\Users\dojeda\source\repos\RoutingAuthentication\RoutingAuthentication\obj\Debug\netcoreapp2.2\RoutingAuthentication.pdb
