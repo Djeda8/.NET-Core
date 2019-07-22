@@ -29,6 +29,9 @@ namespace RoutingAuthentication
                 options.LoginPath = "/login";
             });
             services.AddRouting();
+            
+            services.AddDistributedMemoryCache();
+
             services.AddSession();
         }
 
@@ -41,7 +44,7 @@ namespace RoutingAuthentication
             }
 
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseAuthentication();
 
             var cookiePolicyOptions = new CookiePolicyOptions
