@@ -17,9 +17,6 @@ namespace authenticationCookies
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie();
-
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
                     options.Cookie.HttpOnly = true;
@@ -29,6 +26,7 @@ namespace authenticationCookies
                     options.AccessDeniedPath = "/users/denied";
                     options.LoginPath = "/users/login";
                 });
+            services.AddRouting();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,22 +52,46 @@ namespace authenticationCookies
                 var name = context.GetRouteValue("name").ToString();
                 var email = context.GetRouteValue("email").ToString();
 
-                var identity = new ClaimsIdentity("MyApp");
+                var identity = new ClaimsIdentity(CookieAuthenticationDefaults.AuthenticationScheme);
                 identity.AddClaim(new Claim(ClaimTypes.Name, name));
                 identity.AddClaim(new Claim(ClaimTypes.Email, email));
                 identity.AddClaim(new Claim(ClaimTypes.Role, "Admin"));
                 identity.AddClaim(new Claim(ClaimTypes.Role, "Superadmin"));
                 var principal = new ClaimsPrincipal(identity);
 
-                await context.Authentication.SignInAsync("MyApp", principal);
-
-                await HttpContext.SignInAsync(
-    CookieAuthenticationDefaults.AuthenticationScheme,
-    new ClaimsPrincipal(claimsIdentity),
-    authProperties);
-
+                await context.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, 
+                    new AuthenticationProperties()
+                    {
+                        IsPersistent = true // make it persistent between sessions different from the browser
+                    });
+                              
                 await context.Response.WriteAsync("Logged in!");
             });
+
+            routeBuilder.MapGet("private", async (HttpContext context) =>
+            {
+                if (!context.User.Identity.IsAuthenticated)
+                {
+                    await context.Response.WriteAsync($"Not authorized");
+                }
+                else
+                {
+                    var name = context.User.Identity.Name;
+                    var email = context.User.Claims
+                                       .FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+                    var roles = string.Join(", ", context.User.Claims
+                                                      .Where(c => c.Type == ClaimTypes.Role)
+                                                      .Select(c => c.Value));
+                    await context.Response.WriteAsync($"Logged in {name}, email: {email}, roles: {roles}");
+                }
+            });
+
+            routeBuilder.MapGet("logout", async context =>
+            {
+                await context.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                await context.Response.WriteAsync($"Logged out!");
+            });
+
             var router = routeBuilder.Build();
             app.UseRouter(router);
         }
