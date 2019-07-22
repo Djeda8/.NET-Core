@@ -1,11 +1,12 @@
-﻿using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Linq;
 using System.Security.Claims;
 
 namespace authenticationCookies
@@ -59,12 +60,12 @@ namespace authenticationCookies
                 identity.AddClaim(new Claim(ClaimTypes.Role, "Superadmin"));
                 var principal = new ClaimsPrincipal(identity);
 
-                await context.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal, 
+                await context.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal,
                     new AuthenticationProperties()
                     {
                         IsPersistent = true // make it persistent between sessions different from the browser
                     });
-                              
+
                 await context.Response.WriteAsync("Logged in!");
             });
 
