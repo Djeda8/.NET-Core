@@ -1,0 +1,14 @@
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\bin\Debug\netcoreapp2.2\ResponseCompressionMiddleware.deps.json
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\bin\Debug\netcoreapp2.2\ResponseCompressionMiddleware.runtimeconfig.json
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\bin\Debug\netcoreapp2.2\ResponseCompressionMiddleware.runtimeconfig.dev.json
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\bin\Debug\netcoreapp2.2\ResponseCompressionMiddleware.dll
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\bin\Debug\netcoreapp2.2\ResponseCompressionMiddleware.pdb
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.csprojAssemblyReference.cache
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.csproj.CoreCompileInputs.cache
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.RazorAssemblyInfo.cache
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.RazorAssemblyInfo.cs
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.AssemblyInfoInputs.cache
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.AssemblyInfo.cs
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.RazorTargetAssemblyInfo.cache
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.dll
+C:\Users\dojeda\source\repos\ResponseCompressionMiddleware\ResponseCompressionMiddleware\obj\Debug\netcoreapp2.2\ResponseCompressionMiddleware.pdb
