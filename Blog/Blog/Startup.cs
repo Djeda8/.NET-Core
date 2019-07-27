@@ -54,8 +54,8 @@ namespace Blog
                 // New routes:
                 routes.MapRoute(
                     name: "viewpost",
-                    template: "{controller}/{slug}",
-                    defaults: new { action = "ViewPost" }
+                    template: "view-post/{controller}/{slug}",
+                    defaults: new { controller = "Blog", action = "ViewPost" }
                 );
 
                 routes.MapRoute(

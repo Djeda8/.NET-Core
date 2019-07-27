@@ -15,17 +15,17 @@ namespace Blog.Services
         static BlogServices()
         {
             Posts = new List<Post>
-        {
-            new Post() {Title = "Welcome to MVC", Slug = "welcome-to-mvc",
-                        Author = "jmaguilar", Text = "Hi! Welcome to MVC!",
-                        Date = new DateTime(2016, 01, 01)},
-            new Post() {Title = "Second post", Slug = "second-post",
-                        Author = "jmaguilar", Text = "Hello, this is my second post :)",
-                        Date = new DateTime(2016, 01, 10)},
-            new Post() {Title = "Another post", Slug = "another-post",
-                        Author = "jmaguilar", Text = "Wow, this is my third post!",
-                        Date = new DateTime(2016, 03, 15)},
-        };
+            {
+                new Post() {Title = "Welcome to MVC", Slug = "welcome-to-mvc",
+                            Author = "jmaguilar", Text = "Hi! Welcome to MVC!",
+                            Date = new DateTime(2016, 01, 01)},
+                new Post() {Title = "Second post", Slug = "second-post",
+                            Author = "jmaguilar", Text = "Hello, this is my second post :)",
+                            Date = new DateTime(2016, 01, 10)},
+                new Post() {Title = "Another post", Slug = "another-post",
+                            Author = "jmaguilar", Text = "Wow, this is my third post!",
+                            Date = new DateTime(2016, 03, 15)},
+            };
 
             for (int i = 1; i < 5; i++)
             {
@@ -39,6 +39,19 @@ namespace Blog.Services
                         Date = new DateTime(2016, 06, 01).AddDays(i)
                     }
                 );
+            }
+            var rnd = new Random();
+            foreach (var post in Posts)
+            {
+                for (int i = 0; i < rnd.Next(4); i++)
+                {
+                    post.Comments.Add(new Comment()
+                    {
+                        Author = $"user{rnd.Next(1000)}",
+                        Date = post.Date.AddDays(rnd.Next(0, 100)),
+                        Text = $"Hello, your post {post.Title} looks great!"
+                    });
+                }
             }
         }
 

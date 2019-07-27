@@ -16,6 +16,10 @@
                 <li style="@style">
                     <h3>@post.Title</h3>
                     <div>Posted by @post.Author on @post.Date.ToString("d")</div>
+                    @if (post.Comments.Any())
+                    {
+                        <div>@post.Comments.Count() comments</div>
+                    }
                 </li>
             }
         </ul>

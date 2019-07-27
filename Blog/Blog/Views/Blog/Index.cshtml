@@ -6,12 +6,22 @@
 <ul>
     @foreach (var post in Model)
     {
-        <li>
-            <h3>@post.Title</h3>
-            <div>
-                Posted by @post.Author on @post.Date.ToString("d")
-            </div>
-        </li>
+    <li>
+        <h3>@post.Title</h3>
+        <div>
+            Posted by @post.Author on @post.Date.ToString("d")
+        </div>
+        <div>
+            @*<a href="view-post/blog/@post.Slug">Read post...</a>*@
+            <a asp-controller="blog" asp-action="viewpost" asp-route-slug="@post.Slug">
+                Read post...
+            </a>
+        </div>
+        @if (post.Comments.Any())
+        {
+            <div>@post.Comments.Count() comments</div>
+        }
+    </li>
     }
 </ul>
 
