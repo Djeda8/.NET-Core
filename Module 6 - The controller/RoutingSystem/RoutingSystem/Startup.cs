@@ -93,11 +93,12 @@ namespace RoutingSystem
                     {
                         controller = "friends",
                         action = "Delete"
-                    });
+                    },
+                    constraints: new { id = @"\d{1,10}" });
 
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}"
+                    template: "{controller=Products}/{action=Index}/{id?}"
                     );
             });
         }
