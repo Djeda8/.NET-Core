@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form method="post" action="@Url.Action("Show", "Friends")">
+    <label>Name:</label>
+    <input type="text" name="name" />
+    <br />
+    <label>Age:</label>
+    <input type="text" name="age" />
+    <br />
+
+    <!-- Address editor -->
+
+    <hr />
+    <label>Street:</label>
+    <input type="text" name="address.street" />
+    <br />
+    <label>Zip code: </label>
+    <input type="text" name="address.zipcode" />
+    <br />
+    <input type="submit" value="Submit" />
+</form>
