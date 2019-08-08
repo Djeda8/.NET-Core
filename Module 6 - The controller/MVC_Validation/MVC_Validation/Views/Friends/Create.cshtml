@@ -1,0 +1,30 @@
+﻿@model MVC_Validation.Models.Friend
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+@Html.ValidationSummary()
+
+<form method="post" action="/friends/create">
+    Name: <input type="text" name="name" value="@Model.Name" />
+    @Html.ValidationMessage("name")
+    <br />
+    Age:  <input type="text" name="age" value="@Model.Age" />
+    @Html.ValidationMessage("age")
+    <br />
+    email:  <input type="email" name="email" value="@Model.Email" />
+    @Html.ValidationMessage("email")
+    <br />
+    Street: <input type="text" name="Address.Street" value="@Model.Address.Street" />
+    @Html.ValidationMessage("Address.Street")
+    <br />
+    City:  <input type="text" name="Address.City" value="@Model.Address.City" />
+    @Html.ValidationMessage("Address.City")
+    <br />
+    Zipcode: <input type="text" name="Address.ZipCode" value="@Model.Address.ZipCode" />
+    @Html.ValidationMessage("Address.ZipCode")
+    <br />
+
+    <input type="submit" value="Submit">
+</form>
